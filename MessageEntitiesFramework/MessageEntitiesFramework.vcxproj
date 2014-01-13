@@ -11,18 +11,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="commonh.h" />
+    <ClInclude Include="common.h" />
     <ClInclude Include="EntityFactory.h" />
-    <ClInclude Include="MainMsgDisp.h" />
+    <ClInclude Include="ErrorCode.h" />
+    <ClInclude Include="GaSystem.h" />
+    <ClInclude Include="IGaObject.h" />
+    <ClInclude Include="ISystem.h" />
+    <ClInclude Include="MessageDef.h" />
     <ClInclude Include="MsgUtil.h" />
     <ClInclude Include="IFactory.h" />
     <ClInclude Include="ISingleton.h" />
-    <ClInclude Include="MacroDef.h" />
+    <ClInclude Include="GaHeader.h" />
     <ClInclude Include="MsgCenter.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GaSystem.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainMsgDisp.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6E4D8768-DDB7-4AA2-87E6-71E7C72EAA39}</ProjectGuid>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{d645b7c2-c0ec-410e-a476-be3ada281b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogSystem">
+      <UniqueIdentifier>{421aad93-1e04-49d2-8951-11788d5efb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{a59701fd-7d0b-4e85-9033-5a74628660c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Entities">
+      <UniqueIdentifier>{477a4a62-0cc7-4a3a-be49-6f493a5c978f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Message">
+      <UniqueIdentifier>{11b89b15-0534-4a83-bd83-5611935f5932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ISingleton.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IFactory.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgCenter.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgUtil.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="GaHeader.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ISystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFactory.h">
+      <Filter>System\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDef.h">
+      <Filter>System\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GaSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="IGaObject.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GaSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

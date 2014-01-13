@@ -1,7 +1,7 @@
 #ifndef MsgUtil_h__
 #define MsgUtil_h__
 
-#include <functional>
+#include "common.h"
 
 class MsgUtil
 {
@@ -12,31 +12,20 @@ public:
 
 		struct
 		{
-			unsigned int groupId:8;//255
-			unsigned int stateId:8;//255
-			unsigned int insId:16;//65535
+			unsigned int msgID:8;
+			unsigned int insId:24;
 		};
 
 	}msgInfo;
 
-	static unsigned int genMsg( int targetGid, int insId, int msgTypeId )
-	{
-		msgInfo msg;
-		msg.groupId = targetGid;
-		msg.insId = insId;
-		msg.stateId = msgTypeId;
-		return msg.value;
-	}
-
-	static unsigned int genMsg( int targetGid, int msgTypeId )
-	{
-		msgInfo msg;
-		msg.groupId = targetGid;
-		msg.insId = 0;
-		msg.stateId = msgTypeId;
-		return msg.value;
-	}
-
+// 	static unsigned int genMsg( int msgID, int msgDataID, int insID )
+// 	{
+// 		msgInfo msg;
+// 		msg.insId = insId;
+// 		msg.msgDataID = msgDataID;
+// 		msg.msgID = msgID;
+// 		return msg.value;
+// 	}
 };
 
 typedef std::function<void (int, int, int)> msghandler;

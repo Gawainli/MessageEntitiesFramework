@@ -12,10 +12,10 @@ public:
 	virtual ~EntityFactory();
 	virtual Entity* create();
 
-
 protected:
 
 };
+
 
 
 #endif // EntityFactory_h__
